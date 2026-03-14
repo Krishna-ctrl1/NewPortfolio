@@ -13,6 +13,7 @@ import ContactFooter from './components/ContactFooter';
 function App() {
   return (
     <div className="relative w-full bg-black font-sans text-white">
+      <div className="noise-overlay"></div>
       <Navbar />
 
       {/* 3D Canvas Background fixed behind everything */}

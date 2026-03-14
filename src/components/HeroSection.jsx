@@ -44,11 +44,14 @@ const HeroSection = () => {
                 B.Tech (Honors) Data Science student with published research in IEEE and Springer on Quantum ML and Industry 5.0. Experienced in architecting end-to-end AI pipelines, from LLM fine-tuning to scalable MLOps.
             </p>
 
-            <div className="hero-cta flex gap-6">
-                <a href="#projects" className="px-8 py-4 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-semibold transition-all duration-300 hover:shadow-[0_0_20px_rgba(139,92,246,0.4)]">
-                    View Projects
+            <div className="hero-cta flex flex-wrap justify-center gap-6">
+                <a href="#projects" className="btn-premium px-8 py-4 rounded-full text-white font-semibold flex items-center gap-2 group">
+                    <span className="relative z-10">View Projects</span>
+                    <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    {/* Inner glowing aura for primary button */}
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-600/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </a>
-                <a href="#experience" className="px-8 py-4 rounded-full bg-transparent border border-gray-600 hover:border-gray-300 text-white font-semibold transition-all duration-300">
+                <a href="#experience" className="btn-premium px-8 py-4 rounded-full text-gray-300 hover:text-white font-semibold">
                     My Experience
                 </a>
             </div>

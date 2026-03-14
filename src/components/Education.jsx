@@ -28,17 +28,18 @@ const Education = () => {
                     Education
                 </h2>
 
-                <div className="edu-card glass-panel rounded-3xl p-8 md:p-10 hover:border-purple-500 transition-colors duration-500 relative overflow-hidden group">
-                    <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="edu-card glass-panel rounded-3xl p-8 md:p-12 hover:-translate-y-2 hover:border-purple-400 hover:shadow-[0_20px_50px_rgba(139,92,246,0.2)] transition-all duration-500 relative overflow-hidden group">
+                    {/* Ambient inner glow */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none blur-xl"></div>
 
-                    <div className="relative z-10 flex flex-col md:flex-row md:justify-between items-start md:items-center mb-6">
+                    <div className="relative z-10 flex flex-col md:flex-row md:justify-between items-start md:items-center mb-8">
                         <div>
-                            <h3 className="text-3xl font-semibold mb-2">Indian Institute of Information Technology</h3>
-                            <p className="text-lg text-gray-400">B.Tech (Honors) in Computer Science and Engineering</p>
+                            <h3 className="text-3xl md:text-4xl font-extrabold mb-3 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-cyan-400 transition-all duration-300">Indian Institute of Information Technology</h3>
+                            <p className="text-lg md:text-xl text-gray-300 font-medium">B.Tech (Honors) in Computer Science and Engineering</p>
                         </div>
-                        <div className="mt-4 md:mt-0 text-right">
-                            <span className="block text-2xl font-bold text-purple-400 mb-1">2023 – 2027</span>
-                            <span className="text-sm text-gray-500 tracking-wider uppercase">Sri City, AP</span>
+                        <div className="mt-6 md:mt-0 text-left md:text-right">
+                            <span className="inline-block px-4 py-1 rounded-full bg-purple-900/30 border border-purple-500/30 text-purple-300 font-mono text-sm tracking-wide mb-2 md:mb-1 block w-max md:ml-auto">2023 – 2027</span>
+                            <span className="text-sm text-gray-500 tracking-wider uppercase block">Sri City, AP</span>
                         </div>
                     </div>
 
