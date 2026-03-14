@@ -18,6 +18,9 @@ function App() {
       {/* 3D Canvas Background fixed behind everything */}
       <div className="fixed top-0 left-0 w-full h-screen z-0 pointer-events-none">
         <HeroBackground />
+        {/* Ambient Lighting Orbs */}
+        <div className="ambient-orb top-10 left-[-10%]"></div>
+        <div className="ambient-orb ambient-orb-2 bottom-10 right-[-10%]"></div>
       </div>
 
       {/* Sections - Ensure positive z-index and relative positioning so they sit above the fixed background */}

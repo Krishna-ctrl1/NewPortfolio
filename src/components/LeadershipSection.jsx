@@ -30,18 +30,21 @@ const LeadershipSection = () => {
     const containerRef = useRef(null);
 
     useGSAP(() => {
-        gsap.from('.leadership-card', {
-            scrollTrigger: {
-                trigger: containerRef.current,
-                start: 'top 80%',
-            },
-            scale: 0.95,
-            y: 40,
-            opacity: 0,
-            duration: 0.8,
-            stagger: 0.2,
-            ease: 'power3.out'
-        });
+        gsap.fromTo('.leadership-card',
+            { scale: 0.95, y: 40, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: containerRef.current,
+                    start: 'top 80%',
+                },
+                scale: 1,
+                y: 0,
+                opacity: 1,
+                duration: 0.8,
+                stagger: 0.2,
+                ease: 'power3.out'
+            }
+        );
     }, { scope: containerRef });
 
     return (
