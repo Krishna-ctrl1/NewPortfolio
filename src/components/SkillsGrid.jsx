@@ -7,20 +7,20 @@ gsap.registerPlugin(ScrollTrigger);
 
 const skillCategories = [
   {
-    title: "Programming & Databases",
-    skills: ["Python", "SQL", "R", "C", "JavaScript (React, Node.js)", "HTML/CSS", "MongoDB"]
-  },
-  {
     title: "Machine Learning & AI",
-    skills: ["NLP (Hugging Face, Transformers)", "LLM Fine-Tuning", "LangChain", "LangGraph", "Scikit-learn", "PyTorch", "TensorFlow", "Keras", "Prompt Engineering"]
+    skills: ["NLP", "Transformers", "LLM Fine-Tuning", "RAG", "LangChain", "PyTorch", "TensorFlow", "Scikit-learn"]
   },
   {
-    title: "Research & Analytics",
-    skills: ["Statistical Modeling", "Probability Theory", "Spatio-Temporal Analysis", "Information Retrieval", "Data Integrity", "Quantum ML"]
+    title: "Programming",
+    skills: ["Python", "SQL", "R", "JavaScript", "C"]
   },
   {
-    title: "Tools & Deployment",
-    skills: ["Git", "Docker", "Kubernetes", "MLflow", "Streamlit", "Jupyter Notebook", "RStudio", "GitHub Actions", "Power BI", "Tableau"]
+    title: "Tools",
+    skills: ["Docker", "Kubernetes", "MLflow", "Git", "Streamlit", "Jupyter", "Power BI"]
+  },
+  {
+    title: "Research",
+    skills: ["Statistical Modeling", "Probability", "Information Retrieval", "Quantum ML"]
   }
 ];
 

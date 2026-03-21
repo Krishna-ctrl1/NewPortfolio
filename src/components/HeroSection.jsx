@@ -41,7 +41,7 @@ const HeroSection = () => {
             </div>
 
             <p className="hero-sub max-w-3xl text-gray-400 text-lg md:text-xl font-light leading-relaxed mb-10">
-                B.Tech (Honors) Data Science student with published research in IEEE and Springer on Quantum ML and Industry 5.0. Experienced in architecting end-to-end AI pipelines, from LLM fine-tuning to scalable MLOps.
+                B.Tech (Honors) Data Science student with publications in IEEE and Springer, specializing in AI/ML and LLM-based systems. Experienced in building and deploying end-to-end machine learning pipelines, including retrieval-augmented generation, model fine-tuning, and real-time data integration. Strong focus on developing reliable, scalable AI systems with robust evaluation and performance optimization for real-world applications.
             </p>
 
             <div className="hero-cta flex flex-wrap justify-center gap-6">

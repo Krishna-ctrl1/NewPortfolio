@@ -11,16 +11,16 @@ const projects = [
         subtitle: "Domain-Specific Satellite Engineering LLM (2025)",
         role: "LLM Fine-Tuning & Deployment",
         link: "https://github.com/Krishna-ctrl1/OrbitAI",
-        description: "Ensured data integrity and accuracy by fine-tuning Llama-3-8B to strictly adhere to technical standards, reducing false information in engineering queries. Validated model correctness on mass, material, and safety constraints using controlled benchmarks. Deployed a quantized GGUF model locally via Ollama for standards-compliant engineering queries.",
+        description: "Fine-tuned LLaMA-3-8B on domain-specific engineering data to improve factual accuracy. Evaluated performance on 100+ structured test cases, identifying failure modes in safety-critical responses. Reduced hallucinations using prompt constraints and validation pipelines. Deployed quantized GGUF model locally via Ollama for low-latency inference.",
         tags: ["Llama-3-8B", "Fine-Tuning", "Ollama", "GGUF"]
     },
     {
-        title: "FinBot",
-        subtitle: "AI-Powered Financial Planning Assistant (2024)",
-        role: "Data Science & NLP System",
-        link: "https://github.com/Krishna-ctrl1/FinBot",
-        description: "Developed a Streamlit-based platform for financial planning, stock analysis, and investment recommendations. Integrated real-time market data pipelines using Pandas, NumPy, Plotly, and Yahoo Finance APIs. Implemented transformer-based conversational AI for personalized financial advisory. Validated the completeness and accuracy of financial data pulled from multiple market APIs to ensure reliable investment advisory.",
-        tags: ["Streamlit", "Transformers", "Pandas", "Yahoo Finance API"]
+        title: "FinAssist",
+        subtitle: "RAG-Powered Financial Advisory Agent (2025)",
+        role: "LLM Engineering & Vector Search",
+        link: "https://github.com/Krishna-ctrl1/finassist-chatbot",
+        description: "Built a RAG-based financial advisory system using embedding-based retrieval and semantic search. Designed a query classification pipeline for routing queries across 7 financial domains. Integrated real-time financial APIs for dynamic and context-aware responses. Optimized response generation workflow for improved relevance and efficiency.",
+        tags: ["RAG", "Vector Search", "Financial APIs", "Streamlit"]
     },
     {
         title: "DRAKZ: Modular AI Financial Ecosystem",

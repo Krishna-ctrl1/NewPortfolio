@@ -11,31 +11,31 @@ const researchPapers = [
     publisher: "Springer Nature",
     status: "Published",
     doi: "https://doi.org/10.1007/978-3-031-87837-4_7",
-    desc: "Investigated quantum-enhanced learning frameworks for human-machine collaboration and sustainable cyber-physical systems. Developed theoretical insights connecting quantum learning advantages with Industry 5.0 system design."
+    desc: "Investigated quantum-enhanced learning frameworks for human-machine collaboration and sustainable cyber-physical systems. Analyzed hybrid quantum-classical models focusing on robustness, scalability, and deployment feasibility. Developed theoretical insights connecting quantum learning advantages with Industry 5.0 system design."
   },
   {
     title: "Machine Learning for Industry 5.0: A Survey",
     publisher: "IEEE Internet of Things Journal",
     status: "Published",
     doi: "https://doi.org/10.1109/JIOT.2025.3604413",
-    desc: "Conducted a structured survey of machine learning techniques across smart manufacturing and federated systems. Proposed a taxonomy linking learning paradigms with real-world system constraints."
+    desc: "Conducted a structured survey of machine learning techniques across smart manufacturing and federated systems. Identified theoretical gaps, data-centric challenges, and open research problems in Industry 5.0. Proposed a taxonomy linking learning paradigms with real-world system constraints."
   },
   {
-    title: "Quantum ML in IoT Networks",
+    title: "Quantum ML in IoT Networks: Fundamentals, Applications, and Challenges",
     publisher: "IEEE EMR",
     status: "Under Review",
-    doi: "Fundamentals & Applications",
-    desc: "Explored quantum-enhanced feature mappings for distributed IoT data streams. Analyzed learning stability and architectural trade-offs using information-theoretic metrics."
+    doi: "Research Manuscript",
+    desc: "Explored quantum-enhanced feature mappings for distributed IoT data streams. Analyzed learning stability and architectural trade-offs using information-theoretic metrics. Studied feasibility constraints for quantum learning in real-world sensor networks."
   },
   {
     title: "Robust sEMG-Based Learning for Prosthetic Control",
     publisher: "Research Project",
     status: "Ongoing",
     doi: "Under Dr. Sakthi Swarrup J",
-    desc: "Designing robust machine learning pipelines for non-stationary biosignals affected by fatigue and sensor drift. Exploring teacher-student and adaptive learning frameworks."
+    desc: "Designing robust machine learning pipelines for non-stationary biosignals affected by fatigue and sensor drift. Exploring teacher-student and adaptive learning frameworks for limited-supervision scenarios."
   },
   {
-    title: "High-Resolution Air Quality Estimation",
+    title: "High-Resolution Air Quality Estimation using Sensor Networks",
     publisher: "Honors Research Project",
     status: "Ongoing",
     doi: "Under Dr. Mainak Thakur",
