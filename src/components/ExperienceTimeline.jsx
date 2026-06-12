@@ -9,16 +9,23 @@ const experiences = [
   {
     title: "AI Developer Intern",
     company: "Rayi",
-    date: "June 2025 - Aug 2025",
+    date: "June 2025 -- Aug 2025",
     type: "Remote",
-    description: "Architected LLM-based conversational systems for financial analytics, ensuring secure API integration and high-reliability data outputs. Enhanced data integrity by implementing prompt optimization and output validation techniques to eliminate hallucinations in financial reporting. Conducted technical R&D to improve model behavior under domain-specific constraints, mirroring the accuracy requirements of global financial markets."
+    bullets: [
+      "Built LLM-based financial analytics system integrating real-time APIs for multi-domain financial insights.",
+      "Designed validation pipelines reducing hallucination rates by 15-20%, improving reliability of generated outputs.",
+      "Optimized prompt workflows for domain-specific constraints, enhancing system consistency and response accuracy."
+    ]
   },
   {
     title: "Software Engineering Intern",
     company: "OntuneAI",
-    date: "May 2025 - June 2025",
+    date: "May 2025 -- June 2025",
     type: "Hybrid",
-    description: "Worked on prompt engineering and R&D for improving robustness of LLM-driven systems. Evaluated model behavior under edge cases and domain-specific constraints."
+    bullets: [
+      "Worked on prompt engineering and R&D for improving robustness of LLM-driven systems.",
+      "Evaluated model behavior under edge cases and domain-specific constraints."
+    ]
   }
 ];
 
@@ -66,9 +73,11 @@ const ExperienceTimeline = () => {
                 </div>
               </div>
 
-              <p className="relative z-10 text-gray-300 leading-relaxed text-sm md:text-base border-t border-gray-800/50 pt-6 mt-4">
-                {exp.description}
-              </p>
+              <ul className="relative z-10 text-gray-300 leading-relaxed text-sm md:text-base border-t border-gray-800/50 pt-6 mt-4 list-disc pl-5 space-y-2">
+                {exp.bullets.map((bullet, idx) => (
+                  <li key={idx} className="hover:text-white transition-colors duration-200">{bullet}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

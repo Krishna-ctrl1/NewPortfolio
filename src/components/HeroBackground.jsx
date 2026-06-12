@@ -23,8 +23,10 @@ const QuantumParticles = () => {
 
   // Animate the rotation on every frame
   useFrame((state, delta) => {
-    pointsRef.current.rotation.x -= delta / 10;
-    pointsRef.current.rotation.y -= delta / 15;
+    if (pointsRef.current) {
+      pointsRef.current.rotation.x -= delta / 10;
+      pointsRef.current.rotation.y -= delta / 15;
+    }
   });
 
   return (

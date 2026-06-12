@@ -7,21 +7,21 @@ gsap.registerPlugin(ScrollTrigger);
 
 const leadershipRoles = [
     {
-        title: "Student Satellite Club Lead",
-        org: "IIIT Sri City",
-        date: "Nov 2025 - Present",
+        title: "Lead",
+        org: "Student Satellite Club, IIIT Sri City",
+        date: "Nov 2025 -- Present",
         points: [
-            "Leading multidisciplinary teams on satellite mission planning, subsystem design, and standards-compliant documentation.",
-            "Driving research-oriented development of AI-based tools for satellite engineering analysis."
+            "Leading cross-functional team on satellite system design, integrating AI-driven analysis tools.",
+            "Driving development of domain-specific LLM systems for satellite engineering applications."
         ]
     },
     {
-        title: "AI/ML & Data Science Domain Lead",
+        title: "AI/ML & Data Science Lead",
         org: "Google Developer Groups (GDG), IIIT Sri City",
-        date: "Aug 2025 - Present",
+        date: "Aug 2025 -- Present",
         points: [
-            "Mentoring students in machine learning and data science with strong emphasis on theory and applications.",
-            "Organizing research-focused workshops bridging mathematical foundations and real-world AI systems."
+            "Led AI/ML initiatives impacting 100+ students through hands-on workshops and project mentorship.",
+            "Designed and delivered sessions on LLMs, RAG pipelines, and deployment practices."
         ]
     }
 ];

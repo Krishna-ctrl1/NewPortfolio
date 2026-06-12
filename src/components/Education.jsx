@@ -34,23 +34,27 @@ const Education = () => {
 
                     <div className="relative z-10 flex flex-col md:flex-row md:justify-between items-start md:items-center mb-8">
                         <div>
-                            <h3 className="text-3xl md:text-4xl font-extrabold mb-3 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-cyan-400 transition-all duration-300">Indian Institute of Information Technology</h3>
+                            <h3 className="text-3xl md:text-4xl font-extrabold mb-3 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-cyan-400 transition-all duration-300">Indian Institute of Information Technology, Sri City</h3>
                             <p className="text-lg md:text-xl text-gray-300 font-medium">B.Tech (Honors) in Computer Science and Engineering</p>
                         </div>
                         <div className="mt-6 md:mt-0 text-left md:text-right">
                             <span className="inline-block px-4 py-1 rounded-full bg-purple-900/30 border border-purple-500/30 text-purple-300 font-mono text-sm tracking-wide mb-2 md:mb-1 block w-max md:ml-auto">2023 – 2027</span>
-                            <span className="text-sm text-gray-500 tracking-wider uppercase block">Sri City, AP</span>
+                            <span className="text-sm text-gray-500 tracking-wider uppercase block">Sri City, Andhra Pradesh</span>
                         </div>
                     </div>
 
-                    <div className="relative z-10 mt-6 pt-6 border-t border-gray-800/50 flex flex-col md:flex-row gap-6 md:gap-12">
+                    <div className="relative z-10 mt-6 pt-6 border-t border-gray-800/50 flex flex-col sm:flex-row gap-6 sm:gap-12">
                         <div>
                             <span className="text-sm text-gray-500 uppercase tracking-widest block mb-1">Specialization</span>
                             <span className="text-xl font-medium text-gray-200">Data Science</span>
                         </div>
                         <div>
                             <span className="text-sm text-gray-500 uppercase tracking-widest block mb-1">CGPA</span>
-                            <span className="text-xl font-medium text-cyan-400">8.91 / 10</span>
+                            <span className="text-xl font-medium text-cyan-400">8.99 / 10</span>
+                        </div>
+                        <div>
+                            <span className="text-sm text-gray-500 uppercase tracking-widest block mb-1">Graduation</span>
+                            <span className="text-xl font-medium text-purple-400">Expected 2027</span>
                         </div>
                     </div>
                 </div>

@@ -8,26 +8,34 @@ gsap.registerPlugin(ScrollTrigger);
 const projects = [
     {
         title: "OrbitAI",
-        subtitle: "Domain-Specific Satellite Engineering LLM (2025)",
         role: "LLM Fine-Tuning & Deployment",
         link: "https://github.com/Krishna-ctrl1/OrbitAI",
-        description: "Fine-tuned LLaMA-3-8B on domain-specific engineering data to improve factual accuracy. Evaluated performance on 100+ structured test cases, identifying failure modes in safety-critical responses. Reduced hallucinations using prompt constraints and validation pipelines. Deployed quantized GGUF model locally via Ollama for low-latency inference.",
+        bullets: [
+            "Fine-tuned and optimized local inference using 4-bit GGUF quantization, reducing memory usage by 50--60%.",
+            "Developed evaluation pipeline with 100+ structured test cases, improving model accuracy by 25--30%.",
+            "Deployed quantized model using Ollama for efficient, low-latency inference."
+        ],
         tags: ["Llama-3-8B", "Fine-Tuning", "Ollama", "GGUF"]
     },
     {
         title: "FinAssist",
-        subtitle: "RAG-Powered Financial Advisory Agent (2025)",
-        role: "LLM Engineering & Vector Search",
+        role: "LLM Engineering & Retrieval Systems",
         link: "https://github.com/Krishna-ctrl1/finassist-chatbot",
-        description: "Built a RAG-based financial advisory system using embedding-based retrieval and semantic search. Designed a query classification pipeline for routing queries across 7 financial domains. Integrated real-time financial APIs for dynamic and context-aware responses. Optimized response generation workflow for improved relevance and efficiency.",
+        bullets: [
+            "Reduced end-to-end latency by 30--40%, enabling faster real-time financial insights across concurrent user queries.",
+            "Improved retrieval precision by 20--25% using semantic search with real-time API integration.",
+            "Designed system to handle concurrent user queries with stable performance under multi-request scenarios."
+        ],
         tags: ["RAG", "Vector Search", "Financial APIs", "Streamlit"]
     },
     {
-        title: "DRAKZ: Modular AI Financial Ecosystem",
-        subtitle: "Full-Stack AI Platform (2024)",
-        role: "Architect & Developer",
+        title: "DRAKZ",
+        role: "Full-Stack AI Platform",
         link: "https://github.com/Krishna-ctrl1/DRAKZ-1",
-        description: "Architected a modular financial management system integrating asset tracking, analytics, and advisory services. Designed AI-driven stock recommendation and financial planning modules using real-time data. Implemented secure authentication and scalable backend services for multi-user deployment.",
+        bullets: [
+            "Built modular financial platform integrating analytics, asset tracking, and ML-based stock recommendation pipelines.",
+            "Implemented scalable backend services with secure authentication and real-time data ingestion."
+        ],
         tags: ["Full-Stack", "AI Analytics", "Secure Backend"]
     }
 ];
@@ -87,9 +95,11 @@ const ProjectsSection = () => {
                                     {project.role}
                                 </p>
 
-                                <p className="text-gray-300 leading-relaxed mb-8 text-sm">
-                                    {project.description}
-                                </p>
+                                <ul className="text-gray-300 leading-relaxed mb-8 text-sm list-disc pl-5 space-y-3">
+                                    {project.bullets.map((bullet, idx) => (
+                                        <li key={idx} className="hover:text-white transition-colors duration-200">{bullet}</li>
+                                    ))}
+                                </ul>
                             </div>
 
                             <div className="relative z-10 flex flex-wrap gap-2 mt-auto">
