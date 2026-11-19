@@ -1,16 +1,48 @@
-# React + Vite
+# Krishna Gupta — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal site: AI Engineer & Data Scientist, AI Developer at Rayi Fintech, B.Tech (Honors) Data Science at IIIT Sri City.
 
-Currently, two official plugins are available:
+Live: https://krishna-ctrl1.github.io/NewPortfolio/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
 
-## React Compiler
+React 19 · Vite · Tailwind CSS v4 · Framer Motion · React Three Fiber (3D orbit hero)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Editing content
 
-## Expanding the ESLint configuration
+Every word on the site lives in [`src/data.js`](src/data.js): profile, stats, experience, projects, research, skills, leadership and education. Change it there; the sections only render it.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The **Open source** section pulls the latest public repos from the GitHub API on load, so it stays current on its own.
+
+## Layout
+
+```
+src/
+  data.js            content
+  App.jsx            page order
+  index.css          theme tokens (colours, fonts) and effects
+  sections/
+    Hero.jsx         name, 3D planet, live IST clock, ticker
+    Globe.jsx        three.js dotted planet with orbiting satellites
+    About.jsx        stats + education
+    Work.jsx         experience timeline
+    Projects.jsx     filterable bento grid
+    Research.jsx     publications
+    Stack.jsx        skills marquee + groups + leadership
+    OpenSource.jsx   live GitHub repos
+    Contact.jsx      footer / contact
+    Nav.jsx          header, scroll progress, mobile menu
+    Palette.jsx      ⌘K / Ctrl+K quick menu
+    constants.js     shared easing + section list
+    ui.jsx           shared bits (Reveal, SpotCard, CountUp, icons)
+  components/        previous design, kept for reference (unused)
+```
+
+## Run
+
+```bash
+npm install --legacy-peer-deps
+npm run dev
+```
+
+Pushing to `main` deploys to GitHub Pages via `.github/workflows/deploy.yml`.

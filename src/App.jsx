@@ -1,55 +1,34 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import HeroBackground from './components/HeroBackground';
-import HeroSection from './components/HeroSection';
-import Education from './components/Education';
-import ExperienceTimeline from './components/ExperienceTimeline';
-import ProjectsSection from './components/ProjectsSection';
-import ResearchScroll from './components/ResearchScroll';
-import SkillsGrid from './components/SkillsGrid';
-import LeadershipSection from './components/LeadershipSection';
-import ContactFooter from './components/ContactFooter';
+import { useState } from 'react';
+import Nav from './sections/Nav';
+import Palette from './sections/Palette';
+import Hero from './sections/Hero';
+import About from './sections/About';
+import Work from './sections/Work';
+import Projects from './sections/Projects';
+import Research from './sections/Research';
+import Stack from './sections/Stack';
+import OpenSource from './sections/OpenSource';
+import Contact from './sections/Contact';
 
-function App() {
+// The previous design's components are still in src/components for reference.
+
+export default function App() {
+  const [palette, setPalette] = useState(false);
   return (
-    <div className="relative w-full bg-black font-sans text-white">
-      <div className="noise-overlay"></div>
-      <Navbar />
-
-      {/* 3D Canvas Background fixed behind everything */}
-      <div className="fixed top-0 left-0 w-full h-screen z-0 pointer-events-none">
-        <HeroBackground />
-        {/* Ambient Lighting Orbs */}
-        <div className="ambient-orb top-10 left-[-10%]"></div>
-        <div className="ambient-orb ambient-orb-2 bottom-10 right-[-10%]"></div>
-      </div>
-
-      {/* Sections - Ensure positive z-index and relative positioning so they sit above the fixed background */}
-      <div className="relative z-10 w-full overflow-hidden">
-        <HeroSection />
-
-        <Education />
-
-        <div id="experience">
-          <ExperienceTimeline />
-        </div>
-
-        <ProjectsSection />
-
-        <div id="research">
-          <ResearchScroll />
-        </div>
-
-        <div id="skills">
-          <SkillsGrid />
-        </div>
-
-        <LeadershipSection />
-
-        <ContactFooter />
-      </div>
+    <div className="relative">
+      <div className="grain" aria-hidden="true" />
+      <Nav onPalette={() => setPalette(true)} />
+      <Palette open={palette} setOpen={setPalette} />
+      <main>
+        <Hero />
+        <About />
+        <Work />
+        <Projects />
+        <Research />
+        <Stack />
+        <OpenSource />
+      </main>
+      <Contact />
     </div>
   );
 }
-
-export default App;
