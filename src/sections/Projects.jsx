@@ -66,8 +66,8 @@ function ProjectCard({ p, big }) {
 
 export default function Projects() {
   const [filter, setFilter] = useState('All');
-  // Order that tiles a 6-column bento with no gaps: big, big | big, big | small x3 | big, big | small x3
-  const order = ['OrbitAI', 'FinAssist', 'AML Investigation Swarm', 'Myoelectric Distillation', 'Autonomous Research Agent', 'Customer Segmentation Engine', 'HN Trend & Sentiment', 'Fraud as a Collective Anomaly', 'Robust Canvas Bot', 'DRAKZ', 'Judas Protocol', 'ERP Bot'];
+  // Order that tiles a 6-column bento with no gaps: big, big | small x3 | small x3 | small x3
+  const order = ['OrbitAI', 'FinAssist', 'AML Investigation Swarm', 'Autonomous Research Agent', 'Myoelectric Distillation', 'Customer Segmentation Engine', 'HN Trend & Sentiment', 'Robust Canvas Bot', 'DRAKZ', 'Judas Protocol', 'ERP Bot'];
   const sorted = [...projects].sort((a, b) => (order.indexOf(a.title) + 1 || 99) - (order.indexOf(b.title) + 1 || 99));
   const list = filter === 'All' ? sorted : sorted.filter((p) => p.category === filter);
 

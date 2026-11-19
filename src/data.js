@@ -41,7 +41,7 @@ export const experience = [
     company: 'Rayi Fintech',
     title: 'AI Developer',
     date: 'Jun 2026 — Present',
-    place: 'Remote',
+    place: 'Onsite',
     current: true,
     summary: 'Building Rayi’s voice-first AI investing assistant, live at ai.rayi.app.',
     bullets: [
@@ -115,7 +115,6 @@ export const projects = [
   {
     title: 'AML Investigation Swarm',
     kicker: 'Agentic anti-money-laundering',
-    featured: true,
     category: 'LLM & Agents',
     year: '2026',
     link: 'https://github.com/Krishna-ctrl1/aml-investigation-swarm',
@@ -138,30 +137,14 @@ export const projects = [
     kicker: 'Low-latency prosthetic control',
     category: 'ML & Research',
     year: '2026',
-    featured: true,
     link: 'https://github.com/Krishna-ctrl1/Active-Knowledge-Distillation-for-Low-Latency-Myoelectric-Prosthetic-Control-',
     description:
       'A small student model distilled from a large teacher reads EMG signals into gestures at edge-device speed. It is validated leave-one-subject-out, explained with SHAP and drives a PyBullet robot-arm digital twin.',
     tags: ['PyTorch', 'Knowledge Distillation', 'NinaPro DB5', 'SHAP', 'PyBullet'],
   },
   {
-    title: 'Fraud as a Collective Anomaly',
-    kicker: 'Elliptic Bitcoin study',
-    featured: true,
-    category: 'ML & Research',
-    year: '2026',
-    description:
-      'Showed that point-anomaly detectors do worse than random on illicit Bitcoin flows, because fraud clusters with look-alikes. A density detector puts 83 frauds in its top 100 alerts, and a drift monitor with retraining recovers PR-AUC from 0.10 to 0.57.',
-    metrics: [
-      { k: '0.75', v: 'XGBoost PR-AUC' },
-      { k: '83/100', v: 'top alerts are fraud' },
-    ],
-    tags: ['Anomaly Detection', 'XGBoost', 'kNN Density', 'Drift'],
-  },
-  {
     title: 'Robust Canvas Bot',
     kicker: 'Semantic-aware robotic drawing',
-    featured: true,
     category: 'Vision & Robotics',
     year: '2026',
     link: 'https://github.com/Krishna-ctrl1/Robust-Canvas-Bot',
