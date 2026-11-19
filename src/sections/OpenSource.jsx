@@ -5,6 +5,9 @@ import { Reveal, SectionHead, Arrow } from './ui';
 // Pulls the latest public repos straight from GitHub, so this list stays
 // current without editing the site. Falls back quietly if the API is down.
 
+// Repos kept off the site (private work in progress).
+const HIDDEN = new Set(['delhi-aq-analysis']);
+
 const langColor = {
   Python: '#3572A5',
   JavaScript: '#f1e05a',
@@ -32,7 +35,7 @@ export default function OpenSource() {
       .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
       .then((data) => {
         const list = data
-          .filter((r) => !r.fork && r.name !== profile.githubUser)
+          .filter((r) => !r.fork && r.name !== profile.githubUser && !HIDDEN.has(r.name))
           .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
           .slice(0, 8);
         setRepos(list);

@@ -28,8 +28,8 @@ export default function Research() {
           index="04"
           label="Research"
           title="Published"
-          accent="& in the lab."
-          aside="IEEE, Springer and ongoing work on physics-informed models, written with researchers from IIT Mandi, FinThrive (USA) and Sister Nivedita University."
+          accent="research."
+          aside="Three peer-reviewed papers across IEEE and Springer, written with researchers from IIT Mandi, FinThrive (USA) and Sister Nivedita University."
         />
 
         <ol className="border-t border-line">

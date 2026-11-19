@@ -34,7 +34,6 @@ export const ticker = [
   'Llama-3 fine-tuned for satellite engineering',
   'GDG AI/ML Lead',
   'Global Game Jam 2026',
-  'Physics-informed air-quality modelling',
 ];
 
 export const experience = [
@@ -257,14 +256,6 @@ export const research = [
     url: 'https://doi.org/10.1007/978-3-031-87837-4_7',
     abstract:
       'Quantum-enhanced learning frameworks for cyber-physical systems, and how feasible hybrid quantum-classical models are at scale.',
-  },
-  {
-    title: 'Delhi-PIGM: Identifiability-Gated Physics-Informed Generative Modelling of Delhi NCR Air Quality',
-    venue: 'Manuscript in preparation',
-    year: '2026',
-    status: 'In progress',
-    abstract:
-      'Audits which physical terms a physics-informed model can actually identify, then calibrates and freezes them. A Transformer forecasts PM2.5 at R² ≈ 0.93, and physics-on models get counterfactual directions right far more often.',
   },
 ];
 
