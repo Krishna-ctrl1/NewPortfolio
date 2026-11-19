@@ -34,6 +34,7 @@ export const ticker = [
   'Llama-3 fine-tuned for satellite engineering',
   'GDG AI/ML Lead',
   'Global Game Jam 2026',
+  'BoxBox: F1 pit stops priced like options',
 ];
 
 export const experience = [
@@ -82,6 +83,23 @@ export const projectFilters = ['All', 'LLM & Agents', 'ML & Research', 'Vision &
 
 export const projects = [
   {
+    title: 'BoxBox',
+    kicker: 'F1 pit strategy priced like an option',
+    category: 'ML & Research',
+    year: '2026',
+    featured: true,
+    link: 'https://github.com/Krishna-ctrl1/BoxBox',
+    demo: 'https://box-box-sand.vercel.app/',
+    description:
+      'Learns tyre wear from two seasons of real F1 timing data, simulates the rest of a race 2,000 times at once, and prices the pit stop like an American option (Longstaff–Schwartz). Rivals cover undercuts at measured rates, and head-to-head duels are solved for their Nash equilibrium. Live site with replays, odds and a pit-window slider for every 2024 race.',
+    metrics: [
+      { k: '0.66 s', v: 'lap-time error (baseline 1.14 s)' },
+      { k: '93%', v: 'favourite won (leader 79%)' },
+      { k: '+0.47', v: 'places vs teams’ pit calls (in-model)' },
+    ],
+    tags: ['Monte Carlo', 'Optimal Stopping', 'Bayesian', 'Game Theory', 'React'],
+  },
+  {
     title: 'OrbitAI',
     kicker: 'Domain LLM for satellite engineering',
     category: 'LLM & Agents',
@@ -115,6 +133,7 @@ export const projects = [
   {
     title: 'AML Investigation Swarm',
     kicker: 'Agentic anti-money-laundering',
+    featured: true,
     category: 'LLM & Agents',
     year: '2026',
     link: 'https://github.com/Krishna-ctrl1/aml-investigation-swarm',
@@ -137,6 +156,7 @@ export const projects = [
     kicker: 'Low-latency prosthetic control',
     category: 'ML & Research',
     year: '2026',
+    featured: true,
     link: 'https://github.com/Krishna-ctrl1/Active-Knowledge-Distillation-for-Low-Latency-Myoelectric-Prosthetic-Control-',
     description:
       'A small student model distilled from a large teacher reads EMG signals into gestures at edge-device speed. It is validated leave-one-subject-out, explained with SHAP and drives a PyBullet robot-arm digital twin.',
@@ -145,6 +165,7 @@ export const projects = [
   {
     title: 'Robust Canvas Bot',
     kicker: 'Semantic-aware robotic drawing',
+    featured: true,
     category: 'Vision & Robotics',
     year: '2026',
     link: 'https://github.com/Krishna-ctrl1/Robust-Canvas-Bot',
